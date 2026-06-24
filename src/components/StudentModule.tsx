@@ -323,6 +323,10 @@ export default function StudentModule({ lessons, attempts, onNewAttempt, student
       levelAtTime: newLevel,
       keysStats: {},
       keystrokeEvents: history,
+      userId: studentName,
+      wpm: finalNetWpm,
+      duration: seconds,
+      timestamp: Date.now(),
     };
 
     onNewAttempt(newAttempt);

@@ -132,7 +132,11 @@ export default function TeacherModule({
       content: newLessonContent,
       targetWpm: newLessonTargetWpm,
       minDuration: 30,
-      studiedKeys: []
+      studiedKeys: [],
+      type: newLessonCategory,
+      description: 'Lección personalizada del docente',
+      difficulty: 'intermediate',
+      estimatedMinutes: 15
     };
 
     onAddCustomLesson(nLesson);
